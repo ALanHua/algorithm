@@ -11,7 +11,7 @@
 #include "SortTestHelper.h"
 #include "SlectionSort.h"
 #include "InsertionSort.h"
-
+#include "BubbleSort.h"
 
 
 /**
@@ -26,7 +26,8 @@ int main(int argc, const char * argv[]) {
     int* arr = SortTestHelper::generateRandomArray(n, 0, n);
 //    SortTestHelper::printArray(arr, n);
 //    SortTestHelper::testSort("slectionSort", selectionSort, arr, n);
-    SortTestHelper::testSort("slectionSort", InsertionSortAdvance, arr, n);
+//    SortTestHelper::testSort("insertionSortAdvance", insertionSortAdvance, arr, n);
+    SortTestHelper::testSort("bubbleSort", bubbleSortAdvance2, arr, n);
 //    SortTestHelper::printArray(arr, n);
     delete [] arr;
     

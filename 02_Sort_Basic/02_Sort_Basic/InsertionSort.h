@@ -14,7 +14,7 @@
 using namespace std;
 
 template <typename T>
-void InsertionSort(T arr[],int n){
+void insertionSort(T arr[],int n){
     for (int i = 1; i < n; ++i) {
         for (int j = i; j > 0; --j) {
             if (arr[j] < arr[j-1]) {
@@ -27,7 +27,7 @@ void InsertionSort(T arr[],int n){
 }
 
 template <typename T>
-void InsertionSortAdvance(T arr[],int n){
+void insertionSortAdvance(T arr[],int n){
     for (int i = 1; i < n; ++i) {
         T e = arr[i];
         int j;
