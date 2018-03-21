@@ -29,6 +29,7 @@
 		B83E69D020600CAC0062F0C5 /* SortTestHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortTestHelper.h; sourceTree = "<group>"; };
 		B83E69D120614D1B0062F0C5 /* InsertionSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InsertionSort.h; sourceTree = "<group>"; };
 		B83E69D220615B9A0062F0C5 /* BubbleSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BubbleSort.h; sourceTree = "<group>"; };
+		B83E69D32062AC380062F0C5 /* ShellSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShellSort.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				B83E69C820600C400062F0C5 /* main.cpp */,
+				B83E69D32062AC380062F0C5 /* ShellSort.h */,
 				B83E69CF20600C8E0062F0C5 /* SlectionSort.h */,
 				B83E69D120614D1B0062F0C5 /* InsertionSort.h */,
 				B83E69D020600CAC0062F0C5 /* SortTestHelper.h */,

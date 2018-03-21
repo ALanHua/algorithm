@@ -12,7 +12,7 @@
 #include "SlectionSort.h"
 #include "InsertionSort.h"
 #include "BubbleSort.h"
-
+#include "ShellSort.h"
 
 /**
  排序算法总结:
@@ -27,7 +27,8 @@ int main(int argc, const char * argv[]) {
 //    SortTestHelper::printArray(arr, n);
 //    SortTestHelper::testSort("slectionSort", selectionSort, arr, n);
 //    SortTestHelper::testSort("insertionSortAdvance", insertionSortAdvance, arr, n);
-    SortTestHelper::testSort("bubbleSort", bubbleSortAdvance2, arr, n);
+//    SortTestHelper::testSort("bubbleSort", bubbleSortAdvance2, arr, n);
+    SortTestHelper::testSort("shellSort", shellSort2, arr, n);
 //    SortTestHelper::printArray(arr, n);
     delete [] arr;
     
