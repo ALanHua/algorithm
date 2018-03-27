@@ -12,11 +12,11 @@
 
 int main(int argc, const char * argv[]) {
     
-    int n = 100000;
+    int n = 10000;
     
     int* arr = SortTestHelper::generateRandomArray(n, 0, n);
 //        SortTestHelper::printArray(arr, n);
-    SortTestHelper::testSort("mergeSort", mergeSort, arr, n);
+    SortTestHelper::testSort("mergeSort", mergeSort2, arr, n);
 //        SortTestHelper::printArray(arr, n);
     delete [] arr;
     

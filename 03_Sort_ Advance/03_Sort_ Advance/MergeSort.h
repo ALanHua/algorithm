@@ -56,11 +56,46 @@ void __mergeSort(T arr[],int l,int r){
     __merge(arr,l,mid,r);
 }
 
-
 template <typename T>
 void mergeSort(T arr[],int n) {
     __mergeSort(arr,0,n-1);
 }
+
+template <typename T>
+void insertionSort(T arr[],int l,int r) {
+    for (int i = l + 1; i<= r; ++i) {
+        for (int j = i; j > l; --j) {
+            if (arr[j] < arr[j-1]) {
+                swap(arr[j-1], arr[j]);
+            }else{
+                break;
+            }
+        }
+    }
+}
+
+template <typename T>
+void __mergeSort2(T arr[],int l,int r){
+    if (r - l > 15) {
+        insertionSort(arr,l,r);
+        return;
+    }
+    int mid = (l + r) / 2;
+    __mergeSort2(arr,l,mid);
+    __mergeSort2(arr,mid + 1,r);
+//    有序的数组非常有效
+    if (arr[mid] > arr[mid + 1]) {
+        __merge(arr, l, mid, r);
+    }
+    
+}
+
+template <typename T>
+void mergeSort2(T arr[],int n) {
+    __mergeSort2(arr, 0, n-1);
+}
+
+
 
 
 #endif /* MergeSort_h */
