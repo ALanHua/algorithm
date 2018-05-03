@@ -9,6 +9,7 @@
 #include <iostream>
 #include "SortTestHelper.h"
 #include "MergeSort.h"
+#include "QuickSort.h"
 
 int main(int argc, const char * argv[]) {
     
@@ -16,7 +17,8 @@ int main(int argc, const char * argv[]) {
     
     int* arr = SortTestHelper::generateRandomArray(n, 0, n);
 //        SortTestHelper::printArray(arr, n);
-    SortTestHelper::testSort("mergeSort", mergeSort2, arr, n);
+//    SortTestHelper::testSort("mergeSort", mergeSort2, arr, n);
+    SortTestHelper::testSort("mergeSort", quickSort, arr, n);
 //        SortTestHelper::printArray(arr, n);
     delete [] arr;
     
